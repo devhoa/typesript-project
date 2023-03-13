@@ -1,0 +1,212 @@
+.ngNhpChild {
+  position: absolute;
+  top: 0;
+  left: 592px;
+  background-color: var(--white2);
+  width: 848px;
+  height: 810px;
+}
+.tnNgNhp {
+  position: relative;
+  line-height: 27px;
+}
+.input {
+  border-radius: var(--br-sm);
+  background-color: var(--white2);
+  border: 1.5px solid var(--gray-gray-100);
+  box-sizing: border-box;
+  width: 400px;
+  height: 44px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-2xl) var(--padding-sm)
+    var(--padding-md);
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  color: var(--gray-blue-gray-5-text);
+}
+.tnNgNhpParent {
+  position: absolute;
+  top: 293px;
+  left: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-sm);
+}
+.frameChild {
+  left: 0;
+}
+.frameChild,
+.frameChild1,
+.frameChild2,
+.frameChild3,
+.frameChild4,
+.frameDiv,
+.frameInner,
+.frameItem {
+  position: absolute;
+  top: 0;
+  border-radius: var(--br-sm);
+  background-color: var(--gray-blue-gray-5-text);
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+.frameItem {
+  left: 48px;
+}
+.frameInner {
+  left: 12px;
+}
+.frameDiv {
+  left: 60px;
+}
+.frameChild1 {
+  left: 24px;
+}
+.frameChild2 {
+  left: 72px;
+}
+.frameChild3 {
+  left: 36px;
+}
+.frameChild4 {
+  left: 84px;
+}
+.frameParent {
+  position: relative;
+  width: 92px;
+  height: 8px;
+  flex-shrink: 0;
+}
+.input1,
+.ueyeSlashIcon {
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.ueyeSlashIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.input1 {
+  border-radius: var(--br-sm);
+  background-color: var(--white2);
+  border: 1.5px solid var(--gray-gray-100);
+  box-sizing: border-box;
+  width: 400px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-lg) var(--padding-sm)
+    var(--padding-md);
+  align-items: center;
+  justify-content: space-between;
+}
+.mtKhuParent,
+.qunMtKhu {
+  position: absolute;
+  left: 94px;
+}
+.mtKhuParent {
+  top: 384px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-sm);
+}
+.qunMtKhu {
+  top: 471px;
+  font-size: var(--reg3-size);
+  line-height: 21px;
+  color: var(--red);
+  cursor: pointer;
+}
+.button1 {
+  position: relative;
+  line-height: 24px;
+}
+.button {
+  top: 511px;
+  left: 215px;
+  border-radius: var(--br-sm);
+  background-color: var(--orange-orange-400);
+  box-shadow: var(--down);
+  width: 162px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: var(--bold2-size);
+  color: var(--white2);
+}
+.button,
+.logoAltaIcon,
+.ngNhpItem {
+  position: absolute;
+  overflow: hidden;
+}
+.logoAltaIcon {
+  top: 82px;
+  left: 208px;
+  width: 170px;
+  height: 136px;
+  object-fit: cover;
+}
+.ngNhpItem {
+  height: 75.81%;
+  width: 42.01%;
+  top: 13.94%;
+  right: 11.39%;
+  bottom: 10.25%;
+  left: 46.6%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.hThng1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.hThng,
+.qunLXp {
+  position: absolute;
+  left: 1046px;
+  color: var(--orange-orange-500);
+  text-align: center;
+}
+.hThng {
+  top: 407px;
+  font-size: var(--reg4-size);
+  line-height: 51px;
+  display: inline-block;
+  width: 142px;
+  height: 54px;
+}
+.qunLXp {
+  top: 454px;
+  font-size: var(--xbold-size);
+  line-height: 54px;
+  font-weight: 900;
+}
+.ngNhp {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--bg);
+  width: 100%;
+  height: 810px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--reg2-size);
+  color: var(--color-darkslategray);
+  font-family: var(--reg4);
+}

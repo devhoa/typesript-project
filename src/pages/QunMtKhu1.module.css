@@ -1,0 +1,128 @@
+.qunMtKhuChild {
+  position: absolute;
+  top: 0;
+  left: 592px;
+  background-color: var(--white2);
+  width: 848px;
+  height: 810px;
+}
+.frameIcon {
+  position: absolute;
+  top: 153px;
+  left: 635px;
+  width: 711px;
+  height: 560px;
+  overflow: hidden;
+}
+.tLiMt {
+  position: absolute;
+  height: 2.96%;
+  width: 11.81%;
+  top: 39.51%;
+  left: 14.51%;
+  font-size: var(--bold3-size);
+  line-height: 33px;
+  display: inline-block;
+}
+.saySomeThing {
+  position: relative;
+  font-weight: 300;
+}
+.input,
+.vuiLngNhp {
+  position: absolute;
+  left: 0;
+}
+.input {
+  top: 31px;
+  border-radius: var(--br-sm);
+  background-color: var(--white2);
+  border: 1.5px solid var(--gray-gray-100);
+  box-sizing: border-box;
+  width: 400px;
+  height: 44px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-2xl) var(--padding-sm)
+    var(--padding-md);
+  align-items: center;
+  justify-content: flex-start;
+}
+.vuiLngNhp {
+  top: 0;
+  line-height: 27px;
+  color: var(--color-darkslategray);
+}
+.inputParent {
+  position: absolute;
+  top: 360px;
+  left: 94px;
+  width: 400px;
+  height: 75px;
+  font-size: var(--reg2-size);
+  color: var(--gray-blue-gray-5-text);
+}
+.button1 {
+  position: relative;
+  line-height: 24px;
+}
+.button {
+  top: 483px;
+  left: 118px;
+  border-radius: var(--br-sm);
+  box-shadow: var(--down);
+  border: 1px solid var(--orange-orange-400);
+  box-sizing: border-box;
+  width: 162px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-xl);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--orange-orange-400);
+}
+.button,
+.button2,
+.logoAltaIcon {
+  position: absolute;
+  overflow: hidden;
+}
+.button2 {
+  top: 483px;
+  left: 304px;
+  border-radius: var(--br-sm);
+  background-color: var(--orange-orange-400);
+  box-shadow: var(--down);
+  width: 162px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--white2);
+}
+.logoAltaIcon {
+  top: 82px;
+  left: 208px;
+  width: 170px;
+  height: 136px;
+  object-fit: cover;
+}
+.qunMtKhu {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--bg);
+  width: 100%;
+  height: 810px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--bold2-size);
+  color: var(--gray-gray-500);
+  font-family: var(--reg4);
+}
