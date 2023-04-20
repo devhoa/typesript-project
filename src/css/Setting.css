@@ -1,0 +1,16 @@
+.input-field-settings input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: hidden;
+  outline: none;
+  padding: 0px;
+}
+
+.input-field-settings {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 37px;
+}

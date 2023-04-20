@@ -1,0 +1,38 @@
+.dropdown-component {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  position: relative;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.selected-option-wrapper {
+  width: 100%;
+  align-items: center;
+}
+
+.dropdown-options {
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  transform: translateY(100%);
+  background-color: white;
+  width: 100%;
+  max-height: 165px;
+  overflow: auto;
+}
+
+.dropdown-option {
+  padding: 10px 12px;
+}
+
+.dropdown-option:hover {
+  background-color: #fff2e7;
+}
+
+.border-secondary:hover {
+  border-color: #ff7506 !important;
+}

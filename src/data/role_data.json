@@ -1,0 +1,32 @@
+[
+  {
+    "role_name": "Kế toán",
+    "quantity": "6",
+    "desc": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+  },
+  {
+    "role_name": "Bác sĩ",
+    "quantity": "6",
+    "desc": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+  },
+  {
+    "role_name": "Lễ tân",
+    "quantity": "6",
+    "desc": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+  },
+  {
+    "role_name": "Quản lý",
+    "quantity": "6",
+    "desc": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+  },
+  {
+    "role_name": "Admin",
+    "quantity": "6",
+    "desc": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+  },
+  {
+    "role_name": "Superadmin",
+    "quantity": "6",
+    "desc": "Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu"
+  }
+]

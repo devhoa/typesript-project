@@ -1,0 +1,242 @@
+.btn-warning {
+  color: #fff;
+  --bs-btn-bg: #ff9138 !important;
+  --bs-btn-border-color: #ff9138 !important;
+  --bs-btn-hover-bg: #fca45d !important;
+  --bs-btn-hover-border-color: #fca45d !important;
+  --bs-btn-active-bg: #fca45d !important;
+  --bs-btn-active-border-color: #fca45d !important;
+  --bs-btn-disabled-bg: #ff9138 !important;
+  --bs-btn-disabled-border-color: #ff9138 !important;
+}
+
+.text-orange {
+  color: #ff9138;
+}
+
+.btn-outline-warning {
+  background: #fff2e7;
+  --bs-btn-color: #ff9138 !important;
+  --bs-btn-border-color: #ff9138 !important;
+  --bs-btn-hover-bg: #ff9138 !important;
+  --bs-btn-hover-border-color: #ff9138 !important;
+  --bs-btn-active-bg: #ff9138 !important;
+  --bs-btn-active-border-color: #ff9138 !important;
+  --bs-btn-disabled-color: #ff9138 !important;
+  --bs-btn-disabled-border-color: #ff9138 !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+}
+
+.my-background {
+  background-color: #f6f6f6;
+}
+
+.my-background-orange {
+  background-color: #ff9138;
+}
+
+.background-add-role {
+  background-color: #fff2e7;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .pe-md-0 {
+    padding-right: 0px !important;
+  }
+
+  .custom-add-btn {
+    margin-right: 1px;
+    margin-left: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.pdx-12 {
+  padding: 0px 12px;
+}
+
+.pds-12 {
+  padding-left: 12px;
+}
+
+.pde-12 {
+  padding-right: 12px;
+}
+
+.form-control {
+  border-color: #6c757d !important;
+}
+
+.cs-pd-btn {
+  padding: 10px 24px;
+}
+
+.min-w-147 {
+  min-width: 147px !important;
+}
+@media screen and (max-width: 420px) {
+  .min-w-147 {
+    min-width: auto !important;
+  }
+}
+
+.py-17 {
+  padding-top: 17px !important;
+  padding-bottom: 17px !important;
+}
+
+.ps-17 {
+  padding-left: 17px !important;
+}
+
+.bdr-16 {
+  border-radius: 16px;
+}
+
+.bdr-8 {
+  border-radius: 8px;
+}
+
+.bdr-24 {
+  border-radius: 24px;
+}
+
+.bdr-bot-24 {
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.h-123 {
+  height: 123px;
+}
+
+.pdt-7 {
+  padding-top: 7px;
+}
+
+.w-140 {
+  width: 140px;
+}
+
+.max-120 {
+  max-width: 120px;
+}
+
+.my-checkbox {
+  width: 25px;
+  height: 25px;
+  border-color: #4277ff;
+  margin-top: 2px !important;
+}
+
+.inputNumber {
+  max-width: 60px;
+}
+
+.overflow-460 {
+  overflow: auto;
+  max-height: 460px;
+}
+
+.shadow-1 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.text-blue {
+  color: #4277ff;
+}
+
+.text-green {
+  color: #35c75a;
+}
+
+.react-datepicker__navigation-icon--previous {
+  top: 8px !important;
+}
+
+.react-datepicker__navigation-icon--next {
+  top: 8px !important;
+}
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow,
+.react-datepicker__navigation-icon::before {
+  border-color: #ff7506 !important;
+}
+
+.react-datepicker__current-month {
+  color: #ff7506 !important;
+  font-size: 1.2rem !important;
+}
+
+.react-datepicker__header {
+  background-color: #fff !important;
+}
+
+.react-datepicker__day-names .react-datepicker__day-name {
+  color: #ff7506 !important;
+  font-weight: 600;
+}
+
+.react-datepicker__day--selected {
+  background-color: #ff7506 !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #fff2e7 !important;
+}
+
+.react-datepicker__day--keyboard-selected:hover {
+  background-color: #ff7506 !important;
+  color: #fff;
+}
+
+.max-100 {
+  max-width: 100px;
+}
+
+.dropdown-options-bell {
+  position: absolute;
+  bottom: -15px;
+  transform: translateY(100%) translateX(-15%);
+  background-color: white;
+  width: 100%;
+  /* max-height: 165px;
+  overflow: auto; */
+  width: 360px;
+}
+
+.dropdown-option-bell {
+  padding: 10px 12px;
+}
+
+.dropdown-option-bell:hover {
+  background-color: #fff2e7;
+}
+
+.noti-title {
+  padding: 10px 12px;
+  background-color: #ff7506;
+  color: #fff;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  font-size: 18px;
+  cursor: default;
+}
+
+.text-brown {
+  color: #bf5805;
+}
+
+.overflow-385 {
+  overflow: auto;
+  max-height: 385px;
+}

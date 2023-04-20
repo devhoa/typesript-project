@@ -1,0 +1,52 @@
+.pdx-20 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.pdx-24 {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.custom-badge-orange {
+  background-color: #ffefd9;
+  color: #ffa860;
+}
+
+.custom-badge-red {
+  background-color: #fbe2e2;
+  color: #e73f3f;
+}
+
+.fa-2xs {
+  padding-top: 2px;
+  font-size: 0.325em;
+}
+
+.color-gray {
+  color: #7e7d88;
+}
+
+.color-yellow {
+  color: #ffd130;
+}
+
+.color-blue {
+  color: #4277ff;
+}
+
+.color-green {
+  color: #35c75a;
+}
+
+.color-pink {
+  color: #f178b6;
+}
+
+.react-datepicker {
+  width: 100%;
+}
+
+.react-datepicker__month-container {
+  width: 100%;
+}

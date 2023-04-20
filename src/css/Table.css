@@ -1,0 +1,57 @@
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: #fff;
+  background-color: #fff !important;
+  --bs-table-hover-bg: #fff2e7 !important;
+}
+
+.table-hover > tbody > tr:hover > * {
+  --bs-table-accent-bg: var(--bs-table-hover-bg) !important;
+  color: var(--bs-table-hover-color);
+}
+
+tbody tr td {
+  background-color: #fff2e7 !important;
+}
+
+.overflow-table {
+  overflow-x: auto;
+}
+
+.bdr-table {
+  border-radius: 14px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #dee2e6 !important;
+  float: none;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.btnPaginate {
+  cursor: pointer;
+  background: var(--bs-table-hover-color);
+  margin: 10px 4px;
+  font-weight: bolder;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  padding: 4px 11px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #7e7d88;
+}
+
+.btnPaginate.active {
+  color: #fff;
+  background-color: #ff7506 !important;
+  border-color: #ff7506 !important;
+}
+
+.pagin:hover {
+  color: #fff;
+  background-color: #ff7506;
+}
+
+.btnPaginate:disabled {
+  color: #a9a9b0;
+  cursor: default;
+}

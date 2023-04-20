@@ -1,0 +1,690 @@
+[
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": true,
+    "connect": true,
+    "service": "Khám tim mạch, Khám mắt..."
+  },
+  {
+    "id": "KIO_01",
+    "name": "Kiosk",
+    "IP": "192.168.1.10",
+    "status": false,
+    "connect": false,
+    "service": "Khám tim mạch, Khám mắt..."
+  }
+]

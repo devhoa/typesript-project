@@ -1,0 +1,29 @@
+.active {
+  background-color: #ff7506 !important;
+  border-color: #ff8e33 !important;
+}
+
+.list-group-item {
+  border: var(--bs-list-group-border-width) solid #fff !important;
+}
+
+.border-bottom {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) #fff !important;
+}
+
+.logout-btn {
+  text-align: start;
+  color: #ff7506;
+  background-color: #fff2e7;
+}
+
+.logout-btn:hover {
+  text-align: start;
+  color: #fff;
+  background-color: #ff7506;
+}
+
+.sidebar-drop:hover {
+  color: #fff;
+  background-color: #ff7506;
+}

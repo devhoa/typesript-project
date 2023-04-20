@@ -1,0 +1,28 @@
+.add-btn {
+  color: #ff7506;
+  --bs-btn-bg: #fff2e7;
+  --bs-btn-border-color: #ff7506;
+  --bs-btn-hover-bg: #fff2e7;
+  --bs-btn-hover-border-color: #ff7506;
+  --bs-btn-active-bg: #fff2e7;
+  --bs-btn-active-border-color: #ff7506;
+  --bs-btn-disabled-bg: #fff2e7;
+  --bs-btn-disabled-border-color: #ff7506;
+  max-width: 85px;
+}
+
+.add-btn:hover {
+  color: #ff7506;
+}
+
+.add-btn:active {
+  color: #ff7506;
+}
+
+.max-width-77 {
+  max-width: 77px !important;
+}
+
+.max-width-72 {
+  max-width: 72px !important;
+}
