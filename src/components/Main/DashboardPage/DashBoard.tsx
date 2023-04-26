@@ -414,22 +414,24 @@ const DashBoard = (props: IProps) => {
                                         Xem theo
                                       </span>
                                       <div>
-                                        <div className="d-flex flex-column gap-2 position-relative">
+                                        <div
+                                          className="d-flex flex-column gap-2 position-relative"
+                                          onClick={() =>
+                                            setShowDropdown(!showDropdown)
+                                          }
+                                        >
                                           <input
-                                            className="form-control max-100"
+                                            className="form-control bg-white max-100 cursor-pointer border-orange"
                                             type="text"
                                             value={options}
                                             disabled
                                           />
                                           <i
-                                            className={`fa-solid pds-12 text-orange cursor-pointer ${
+                                            className={`fa-solid fa-lg pds-12 text-orange cursor-pointer ${
                                               showDropdown
                                                 ? "fa-caret-up "
                                                 : "fa-caret-down "
                                             }  position-absolute top-50 end-0 translate-middle`}
-                                            onClick={() =>
-                                              setShowDropdown(!showDropdown)
-                                            }
                                           ></i>
                                           {showDropdown && (
                                             <>
@@ -535,7 +537,7 @@ const DashBoard = (props: IProps) => {
                                     Ngưng hoạt động
                                   </p>
                                   <h5 className="text-orange fw-bolder mb-0">
-                                    3.799
+                                    422
                                   </h5>
                                 </div>
                               </div>

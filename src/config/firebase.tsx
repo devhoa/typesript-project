@@ -6,4 +6,5 @@ import { config } from "./config";
 const Firebase = firebase.initializeApp(config);
 
 export const auth = firebase.auth();
+export const db = firebase.firestore(Firebase);
 export default Firebase;

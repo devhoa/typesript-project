@@ -4,7 +4,6 @@ import SideBar from "../SideBar";
 import avatar from "../../../assets/img/avatar.png";
 import bell1 from "../../../assets/img/bell.png";
 import bell2 from "../../../assets/img/bell-active.png";
-import Dropdown from "../../utils/Dropdown";
 import { Icon } from "react-icons-kit";
 import { eye } from "react-icons-kit/feather/eye";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
@@ -12,15 +11,13 @@ import "../../../css/Setting.css";
 
 type Props = {};
 
-const roleOptions = ["Chọn loại vai trò", "Kế toán", "Quản lý", "Admin"];
-
-const statusOptions = ["Chọn loại tình trạng", "Hoạt động", "Ngưng hoạt động"];
-
 const AddAccount = (props: Props) => {
   const navigate = useNavigate();
-  const [selectedOption, setSelectedOption] = useState(roleOptions[0]);
-  const [selectedOptions, setSelectedOptions] = useState(statusOptions[0]);
   const [showNotification, setShowNotification] = useState<boolean>(false);
+  const [option, setOption] = useState<string>("");
+  const [showDropdown, setShowDropdown] = useState<boolean>(false);
+  const [options, setOptions] = useState<string>("");
+  const [showDropdowns, setShowDropdowns] = useState<boolean>(false);
 
   const [type, setType] = useState("password");
   const [icon, setIcon] = useState(eyeOff);
@@ -314,11 +311,49 @@ const AddAccount = (props: Props) => {
                                   *
                                 </span>
                               </label>
-                              <Dropdown
-                                options={roleOptions}
-                                selectedOption={selectedOption}
-                                setSelectedOption={setSelectedOption}
-                              />
+                              <div
+                                className="d-flex flex-column gap-2 position-relative"
+                                onClick={() => setShowDropdown(!showDropdown)}
+                              >
+                                <input
+                                  className="form-control bg-white cursor-pointer border-orange"
+                                  type="text"
+                                  value={option}
+                                  placeholder="Chọn loại vai trò"
+                                  disabled
+                                />
+                                <i
+                                  className={`fa-solid fa-lg pds-12 text-orange cursor-pointer ${
+                                    showDropdown
+                                      ? "fa-caret-up "
+                                      : "fa-caret-down "
+                                  }  position-absolute top-50 end-0 translate-middle`}
+                                ></i>
+                                {showDropdown && (
+                                  <>
+                                    <div className="dropdown-options rounded border border-secondary ovf-170 cursor-pointer">
+                                      <div
+                                        className="dropdown-option rounded"
+                                        onClick={() => setOption("Kế toán")}
+                                      >
+                                        Kế toán
+                                      </div>
+                                      <div
+                                        className="dropdown-option rounded"
+                                        onClick={() => setOption("Quản lý")}
+                                      >
+                                        Quản lý
+                                      </div>
+                                      <div
+                                        className="dropdown-option rounded"
+                                        onClick={() => setOption("Admin")}
+                                      >
+                                        Admin
+                                      </div>
+                                    </div>
+                                  </>
+                                )}
+                              </div>
                             </div>
                             <div className="col-md-6 mb-2">
                               <label className="form-label fw-bolder">
@@ -327,11 +362,45 @@ const AddAccount = (props: Props) => {
                                   *
                                 </span>
                               </label>
-                              <Dropdown
-                                options={statusOptions}
-                                selectedOption={selectedOptions}
-                                setSelectedOption={setSelectedOptions}
-                              />
+                              <div
+                                className="d-flex flex-column gap-2 position-relative"
+                                onClick={() => setShowDropdowns(!showDropdowns)}
+                              >
+                                <input
+                                  className="form-control bg-white cursor-pointer border-orange"
+                                  type="text"
+                                  value={options}
+                                  placeholder="Chọn loại tình trạng"
+                                  disabled
+                                />
+                                <i
+                                  className={`fa-solid fa-lg pds-12 text-orange cursor-pointer ${
+                                    showDropdowns
+                                      ? "fa-caret-up "
+                                      : "fa-caret-down "
+                                  }  position-absolute top-50 end-0 translate-middle`}
+                                ></i>
+                                {showDropdowns && (
+                                  <>
+                                    <div className="dropdown-options rounded border border-secondary ovf-170 cursor-pointer">
+                                      <div
+                                        className="dropdown-option rounded"
+                                        onClick={() => setOptions("Hoạt động")}
+                                      >
+                                        Hoạt động
+                                      </div>
+                                      <div
+                                        className="dropdown-option rounded"
+                                        onClick={() =>
+                                          setOptions("Ngưng hoạt động")
+                                        }
+                                      >
+                                        Ngưng hoạt động
+                                      </div>
+                                    </div>
+                                  </>
+                                )}
+                              </div>
                             </div>
                           </div>
                           <div className="row mt-2 mb-5">

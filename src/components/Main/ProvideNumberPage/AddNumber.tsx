@@ -4,25 +4,15 @@ import SideBar from "../SideBar";
 import avatar from "../../../assets/img/avatar.png";
 import bell1 from "../../../assets/img/bell.png";
 import bell2 from "../../../assets/img/bell-active.png";
-import Dropdown from "../../utils/Dropdown";
 import "../../../css/Number.css";
 
 type Props = {};
 
-const supplyOptions = [
-  "Chọn dịch vụ",
-  "Khám tim mạch",
-  "Khám sản - Phụ khoa",
-  "Khám răng hàm mặt",
-  "Khám tai mũi họng",
-  "Khám hô hấp",
-  "Khám tổng quát",
-];
-
 const AddNumber = (props: Props) => {
   const navigate = useNavigate();
-  const [selectedOption, setSelectedOption] = useState(supplyOptions[0]);
   const [showNotification, setShowNotification] = useState<boolean>(false);
+  const [showDropdown, setShowDropdown] = useState<boolean>(false);
+  const [options, setOptions] = useState<string>("");
 
   return (
     <div className="container-fluid">
@@ -174,12 +164,74 @@ const AddNumber = (props: Props) => {
                           </h1>
                         </div>
                         <div className="col-6 text-center relative-25 mb-5">
-                          <Dropdown
-                            options={supplyOptions}
-                            selectedOption={selectedOption}
-                            setSelectedOption={setSelectedOption}
-                            label={"Dịch vụ khách hàng lựa chọn"}
-                          />
+                          <label className="form-label fw-bolder">
+                            Dịch vụ khách hàng lựa chọn
+                          </label>
+                          <div
+                            className="d-flex flex-column gap-2 position-relative"
+                            onClick={() => setShowDropdown(!showDropdown)}
+                          >
+                            <input
+                              className="form-control bg-white cursor-pointer border-orange"
+                              type="text"
+                              value={options}
+                              placeholder="Chọn dịch vụ"
+                              disabled
+                            />
+                            <i
+                              className={`fa-solid fa-lg pds-12 text-orange cursor-pointer ${
+                                showDropdown ? "fa-caret-up " : "fa-caret-down "
+                              }  position-absolute top-50 end-0 translate-middle`}
+                            ></i>
+                            {showDropdown && (
+                              <>
+                                <div className="dropdown-options rounded border border-secondary ovf-170 cursor-pointer">
+                                  <div
+                                    className="dropdown-option rounded"
+                                    onClick={() => setOptions("Khám tim mạch")}
+                                  >
+                                    Khám tim mạch
+                                  </div>
+                                  <div
+                                    className="dropdown-option rounded"
+                                    onClick={() =>
+                                      setOptions("Khám sản - Phụ khoa")
+                                    }
+                                  >
+                                    Khám sản - Phụ khoa
+                                  </div>
+                                  <div
+                                    className="dropdown-option rounded"
+                                    onClick={() =>
+                                      setOptions("Khám răng hàm mặt")
+                                    }
+                                  >
+                                    Khám răng hàm mặt
+                                  </div>
+                                  <div
+                                    className="dropdown-option rounded"
+                                    onClick={() =>
+                                      setOptions("Khám tai mũi họng")
+                                    }
+                                  >
+                                    Khám tai mũi họng
+                                  </div>
+                                  <div
+                                    className="dropdown-option rounded"
+                                    onClick={() => setOptions("Khám hô hấp")}
+                                  >
+                                    Khám hô hấp
+                                  </div>
+                                  <div
+                                    className="dropdown-option rounded"
+                                    onClick={() => setOptions("Khám tổng quát")}
+                                  >
+                                    Khám tổng quát
+                                  </div>
+                                </div>
+                              </>
+                            )}
+                          </div>
                         </div>
                         <div className="col-12 pt-5 mt-5 mb-5">
                           <div className="d-flex  justify-content-center">
@@ -226,7 +278,7 @@ const AddNumber = (props: Props) => {
                                   2001201
                                 </h1>
                                 <span className="text-muted d-flex justify-content-center">
-                                  DV: Khám răng hàm mặt
+                                  DV: {options}
                                   <p className="ps-1 fw-bolder">
                                     (tại quầy số 1)
                                   </p>

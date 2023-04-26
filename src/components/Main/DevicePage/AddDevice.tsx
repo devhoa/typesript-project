@@ -4,15 +4,44 @@ import SideBar from "../SideBar";
 import avatar from "../../../assets/img/avatar.png";
 import bell1 from "../../../assets/img/bell.png";
 import bell2 from "../../../assets/img/bell-active.png";
-import Dropdown from "../../utils/Dropdown";
+import { useDispatch } from "react-redux";
+import { addDevice } from "../../../redux/DeviceSlice";
 
 type Props = {};
 
-const addDeviceOptions = ["Chọn loại thiết bị", "Kiosk", "Display counter"];
-
 const AddDevice = (props: Props) => {
-  const [selectedOption, setSelectedOption] = useState(addDeviceOptions[0]);
   const [showNotification, setShowNotification] = useState<boolean>(false);
+  const [options, setOptions] = useState<string>("");
+  const [showDropdown, setShowDropdown] = useState<boolean>(false);
+
+  const [id, setId] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [ip, setIP] = useState<string>("");
+  const [account, setAccount] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [service, setService] = useState<string>("");
+
+  const handleAddDevice = (e: any) => {
+    e.preventDefault();
+    let device = {
+      id,
+      name,
+      ip,
+      account,
+      password,
+      service,
+    };
+   
+  
+    setId("");
+    setName("");
+    setIP("");
+    setAccount("");
+    setPassword("");
+    setService("");
+    navigate("/device");
+  };
+  
 
   const navigate = useNavigate();
   return (
@@ -153,130 +182,178 @@ const AddDevice = (props: Props) => {
             <div className="row w-100">
               <div className="col-12">
                 <h3 className="text-orange">Quản lý thiết bị</h3>
-                <div className="bdr-16 bg-white my-4">
-                  <div className="container-fluid">
-                    <div className="row">
-                      <div className="col">
-                        <div className="p-3 py-4">
-                          <h5 className="text-orange">Thông tin thiết bị</h5>
-                          <div className="row mt-3">
-                            <div className="col-md-6 mb-2">
-                              <label className="form-label fw-bolder">
-                                <div className="d-flex">
-                                  Mã thiết bị:
+                <form className="" onSubmit={handleAddDevice}>
+                  <div className="bdr-16 bg-white my-4">
+                    <div className="container-fluid">
+                      <div className="row">
+                        <div className="col">
+                          <div className="p-3 py-4">
+                            <h5 className="text-orange">Thông tin thiết bị</h5>
+                            <div className="row mt-3">
+                              <div className="col-md-6 mb-2">
+                                <label className="form-label fw-bolder">
+                                  <div className="d-flex">
+                                    Mã thiết bị:
+                                    <span className="text-orange mx-2 fw-bolder">
+                                      *
+                                    </span>
+                                  </div>
+                                </label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  placeholder="Nhập mã thiết bị"
+                                  onChange={(e) => setId(e.target.value)}
+                                  value={id}
+                                />
+                              </div>
+                              <div className="col-md-6 mb-2">
+                                <label className="form-label fw-bolder">
+                                  Loại thiết bị:
                                   <span className="text-orange mx-2 fw-bolder">
                                     *
                                   </span>
+                                </label>
+                                <div
+                                  className="d-flex flex-column gap-2 position-relative"
+                                  onClick={() => setShowDropdown(!showDropdown)}
+                                >
+                                  <input
+                                    className="form-control bg-white cursor-pointer border-orange"
+                                    type="text"
+                                    value={options}
+                                    placeholder="Chọn loại thiết bị"
+                                    disabled
+                                  />
+                                  <i
+                                    className={`fa-solid fa-lg pds-12 text-orange cursor-pointer ${
+                                      showDropdown
+                                        ? "fa-caret-up "
+                                        : "fa-caret-down "
+                                    }  position-absolute top-50 end-0 translate-middle`}
+                                  ></i>
+                                  {showDropdown && (
+                                    <>
+                                      <div className="dropdown-options rounded border border-secondary ovf-170 cursor-pointer">
+                                        <div
+                                          className="dropdown-option rounded"
+                                          onClick={() => setOptions("Kiosk")}
+                                        >
+                                          Kiosk
+                                        </div>
+                                        <div
+                                          className="dropdown-option rounded"
+                                          onClick={() =>
+                                            setOptions("Display counter")
+                                          }
+                                        >
+                                          Display counter
+                                        </div>
+                                      </div>
+                                    </>
+                                  )}
                                 </div>
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Nhập mã thiết bị"
-                              />
+                              </div>
                             </div>
-                            <div className="col-md-6 mb-2">
-                              <label className="form-label fw-bolder">
-                                Loại thiết bị:
-                                <span className="text-orange mx-2 fw-bolder">
-                                  *
-                                </span>
-                              </label>
-                              <Dropdown
-                                options={addDeviceOptions}
-                                selectedOption={selectedOption}
-                                setSelectedOption={setSelectedOption}
-                              />
+                            <div className="row mt-2">
+                              <div className="col-md-6 mb-2">
+                                <label className="form-label fw-bolder">
+                                  <div className="d-flex">
+                                    Tên thiết bị:
+                                    <span className="text-orange mx-2 fw-bolder">
+                                      *
+                                    </span>
+                                  </div>
+                                </label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  placeholder="Nhập tên thiết bị"
+                                  onChange={(e) => setName(e.target.value)}
+                                  value={name}
+                                />
+                              </div>
+                              <div className="col-md-6 mb-2">
+                                <label className="form-label fw-bolder">
+                                  <div className="d-flex">
+                                    Tên đăng nhập:
+                                    <span className="text-orange mx-2 fw-bolder">
+                                      *
+                                    </span>
+                                  </div>
+                                </label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  placeholder="Nhập tài khoản"
+                                  onChange={(e) => setAccount(e.target.value)}
+                                  value={account}
+                                />
+                              </div>
                             </div>
-                          </div>
-                          <div className="row mt-2">
-                            <div className="col-md-6 mb-2">
-                              <label className="form-label fw-bolder">
+                            <div className="row mt-2">
+                              <div className="col-md-6 mb-2">
+                                <label className="form-label fw-bolder">
+                                  <div className="d-flex">
+                                    Địa chỉ IP:
+                                    <span className="text-orange mx-2 fw-bolder">
+                                      *
+                                    </span>
+                                  </div>
+                                </label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  placeholder="Nhập địa chỉ IP"
+                                  onChange={(e) => setIP(e.target.value)}
+                                  value={ip}
+                                />
+                              </div>
+                              <div className="col-md-6 mb-2">
+                                <label className="form-label fw-bolder">
+                                  <div className="d-flex">
+                                    Mật khẩu:
+                                    <span className="text-orange mx-2 fw-bolder">
+                                      *
+                                    </span>
+                                  </div>
+                                </label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  placeholder="Nhập mật khẩu"
+                                  onChange={(e) => setPassword(e.target.value)}
+                                  value={password}
+                                />
+                              </div>
+                            </div>
+                            <div className="row mt-2">
+                              <div className="col mb-2">
+                                <label className="form-label fw-bolder">
+                                  <div className="d-flex">
+                                    Dịch vụ sử dụng:
+                                    <span className="text-orange mx-2 fw-bolder">
+                                      *
+                                    </span>
+                                  </div>
+                                </label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  placeholder="Nhập dịch vụ"
+                                  onChange={(e) => setService(e.target.value)}
+                                  value={service}
+                                />
+                              </div>
+                            </div>
+                            <div className="row mt-2 mb-5">
+                              <div className="col mb-2">
                                 <div className="d-flex">
-                                  Tên thiết bị:
-                                  <span className="text-orange mx-2 fw-bolder">
+                                  <span className="text-orange me-2 fw-bolder">
                                     *
                                   </span>
+                                  Là trường thông tin bắt buộc
                                 </div>
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Nhập tên thiết bị"
-                              />
-                            </div>
-                            <div className="col-md-6 mb-2">
-                              <label className="form-label fw-bolder">
-                                <div className="d-flex">
-                                  Tên đăng nhập:
-                                  <span className="text-orange mx-2 fw-bolder">
-                                    *
-                                  </span>
-                                </div>
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Nhập tài khoản"
-                              />
-                            </div>
-                          </div>
-                          <div className="row mt-2">
-                            <div className="col-md-6 mb-2">
-                              <label className="form-label fw-bolder">
-                                <div className="d-flex">
-                                  Địa chỉ IP:
-                                  <span className="text-orange mx-2 fw-bolder">
-                                    *
-                                  </span>
-                                </div>
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Nhập địa chỉ IP"
-                              />
-                            </div>
-                            <div className="col-md-6 mb-2">
-                              <label className="form-label fw-bolder">
-                                <div className="d-flex">
-                                  Mật khẩu:
-                                  <span className="text-orange mx-2 fw-bolder">
-                                    *
-                                  </span>
-                                </div>
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Nhập mật khẩu"
-                              />
-                            </div>
-                          </div>
-                          <div className="row mt-2">
-                            <div className="col mb-2">
-                              <label className="form-label fw-bolder">
-                                <div className="d-flex">
-                                  Dịch vụ sử dụng:
-                                  <span className="text-orange mx-2 fw-bolder">
-                                    *
-                                  </span>
-                                </div>
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Nhập dịch vụ"
-                              />
-                            </div>
-                          </div>
-                          <div className="row mt-2 mb-5">
-                            <div className="col mb-2">
-                              <div className="d-flex">
-                                <span className="text-orange me-2 fw-bolder">
-                                  *
-                                </span>
-                                Là trường thông tin bắt buộc
                               </div>
                             </div>
                           </div>
@@ -284,23 +361,23 @@ const AddDevice = (props: Props) => {
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="d-flex  justify-content-center">
-                  <button
-                    type="button"
-                    className="btn btn-outline-warning text-center mx-4 min-w-147 fw-bolder cs-pd-btn"
-                    onClick={() => navigate(-1)}
-                  >
-                    Hủy bỏ
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-center mx-4 min-w-147 fw-bolder cs-pd-btn"
-                  >
-                    Thêm thiết bị
-                  </button>
-                </div>
+                  <div className="d-flex  justify-content-center">
+                    <button
+                      type="button"
+                      className="btn btn-outline-warning text-center mx-4 min-w-147 fw-bolder cs-pd-btn"
+                      onClick={() => navigate(-1)}
+                    >
+                      Hủy bỏ
+                    </button>
+                    <button
+                      type="submit"
+                      className="btn btn-warning text-center mx-4 min-w-147 fw-bolder cs-pd-btn"
+                    >
+                      Thêm thiết bị
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -309,5 +386,6 @@ const AddDevice = (props: Props) => {
     </div>
   );
 };
+
 
 export default AddDevice;
